@@ -1,0 +1,12 @@
+mixin icon(name,mod)
+  - mod = mod || ''
+  svg(class="icon icon-" + name + ' ' + mod)
+    use(xlink:href="static/img/sprite/symbol/sprite.svg#" + name)
+
+
+
+mixin card(mod,title,descr,icon)
+  .card(class=mod)
+    span.card__title=title
+    p.card__descr=descr
+    img(src=`static/img/common/${icon}`).card__icon

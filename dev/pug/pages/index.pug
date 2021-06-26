@@ -1,0 +1,18 @@
+extends ../layouts/main
+
+block variables
+  -var title = 'Главная страница'
+
+block content
+
+  .title
+    span.title__light Reliable, efficient delivery
+    span.title__bold Powered by Technology
+
+  p Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+
+  .cards
+    +card('card-1','Supervisor','Monitors activity to identify project roadblocks','icon-supervisor.svg')
+    +card('card-2','Team Builder','Scans our talent network to create the optimal team for your project','icon-team-builder.svg')
+    +card('card-3','Karma','Regularly evaluates our talent to ensure quality','icon-karma.svg')
+    +card('card-4','Calculator','Uses data from past projects to provide better delivery estimates','icon-calculator.svg')
